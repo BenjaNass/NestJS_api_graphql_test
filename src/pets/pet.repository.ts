@@ -35,7 +35,7 @@ export class PetRepository {
     if (!index) {
       throw new NotFoundException(`Item with ${id} not found`);
     }
-    this.pets.splice(index.id, 1);
+    this.pets.splice(index.id-1, 1);
     writeFileSync(this.filename, JSON.stringify(this.pets));
     return `User with ID ${id} deleted successfully!`;
   }
