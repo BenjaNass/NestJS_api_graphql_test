@@ -9,7 +9,6 @@ type Pet {
 }
 
 type Query {
-  getHello: String!
   pets: [Pet!]!
   findPetById(id: Int!): Pet!
 }
