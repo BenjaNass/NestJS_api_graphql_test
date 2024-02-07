@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Pet {
+  id: Int!
+  name: String!
+  type: String
+}
+
+type Query {
+  getHello: String!
+  pets: [Pet!]!
+  findPetById(id: Int!): Pet!
+}
+
+type Mutation {
+  deletePetById(id: Int!): String!
+  createPet(id: Int!, name: String!, type: String): String!
+  updatePet(id: Int!, name: String!, type: String): String!
+}
